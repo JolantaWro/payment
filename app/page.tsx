@@ -1,7 +1,15 @@
-import Image from 'next/image'
+import Link from "next/link"
+
+async function getUser() {
+  const res = await fetch('/api/getUser')
+}
+
 
 export default function Home() {
+ 
   return (
-    <main className='mx-4 px-0 text-center'>Hell wwwo</main>
+    <main>
+      <Link href={"/dashboard"} className='flex h-screen items-center justify-center'>Go to the dasboard</Link>
+    </main>
   )
 }
