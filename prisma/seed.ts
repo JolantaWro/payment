@@ -1,67 +1,5 @@
 import { prisma } from "@/lib/db";
 
-// async function main () {
-//     const user = await prisma.user.upsert({
-//         where: {
-//             email: 'jolanta.woronowska@gmail.com'
-//         },
-//         update: {
-//             payments: {
-//                 create: [
-//                     {
-//                         id: 1,
-//                         title: "Google Cloud",
-//                         content: "Dysk",
-//                     },
-//                     {
-//                         id: 2,
-//                         title: "Play",
-//                         content: "Phone"
-//                     }
-//                 ]
-//             }
-//         },
-//         create: {
-//             id: 1,
-//             email: "jolanta.woronowska@gmail.com",
-//             name: "Jolanta",
-//             password: "jola",
-//             payments: {
-//                 create: [
-//                     {
-//                         id: 1,
-//                         title: "Google Cloud",
-//                         content: "Dysk",
-//                     },
-//                     {
-//                         id: 2,
-//                         title: "Play",
-//                         content: "Phone"
-//                     }
-//                 ]
-//             }
-//         },
-//         include: {
-//             payments: true
-//         }
-//     })
-
-//     const updatePayments = await Promise.all (
-//         user.payments.map(async(payment) => {
-//             const published = true
-
-//         })
-
-//     )
-// }
-// main().then(async () => {
-//     await prisma.$disconnect
-// }).catch(async (e) => {
-//     console.error(e)
-//     await prisma.$disconnect();
-//     process.exit(1)
-// })
-
 import {
     PAYMENT_STATUS,
     SUBSCRIPTION_BILLING_PERIOD,
@@ -228,9 +166,9 @@ import {
         },
       },
       create: {
-        id: "test123",
-        email: "daniel.noworyta@gmail.com",
-        name: "Daniel Noworyta",
+        id: "test1234",
+        email: "jolanta.w@gmail.com",
+        name: "Jolanta W",
         subscriptions: {
           create: [
             {
