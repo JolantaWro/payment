@@ -1,6 +1,6 @@
-export default function Home() {
+export default function HomePage() {
     return (
-      <main>
+      <main className="mx-4 px-0 text-center">
         Hello from Marketing
       </main>
       )
