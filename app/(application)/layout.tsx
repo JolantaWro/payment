@@ -6,7 +6,7 @@ export default function AplicationLayout({
 }) {
   return (
     <div>
-      <aside>Side nav</aside>
+      <aside className="flex h-screen w-screen items-center justify-center">Side nav</aside>
       <main>{children}</main>
     </div>
   )
